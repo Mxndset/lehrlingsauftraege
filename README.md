@@ -494,6 +494,71 @@ Skript-Erweiterung
 
 ---
 
+# Teil 9: Abschlussfragen schriftlich beantworten
+
+## Aufgabe 12: Antworten in einer Datei speichern
+
+Die Abschlussfragen sollen nicht nur mündlich besprochen, sondern auch schriftlich festgehalten werden.
+
+Erstelle die Datei:
+
+```bash
+nano ~/linux-basics/dokumente/abschlussfragen.txt
+```
+
+Übernimm die folgenden Fragen in die Datei und beantworte jede Frage in eigenen Worten. Schreibe ganze Sätze und nicht nur Stichworte.
+
+```text
+Abschlussfragen Linux Basics
+
+1. Was ist ein Paketmanager und wozu braucht man ihn?
+   Antwort:
+
+2. Was bedeutet `sudo`?
+   Antwort:
+
+3. Was bedeuten die Rechte `r`, `w`, `x`?
+   Antwort:
+
+4. Welche Befehle hast du heute neu gelernt?
+   Antwort:
+
+5. Welche Aufgabe war am einfachsten?
+   Antwort:
+
+6. Welche Aufgabe war am schwierigsten?
+   Antwort:
+
+7. Wie bist du vorgegangen, als du einen Befehl nicht kanntest?
+   Antwort:
+
+8. Welche Fehlermeldung hast du erhalten und wie hast du sie behoben?
+   Antwort:
+
+9. Was hast du selbstständig herausgefunden?
+   Antwort:
+
+10. Was würdest du beim nächsten Mal anders machen?
+    Antwort:
+```
+
+Speichere und schliesse die Datei (`CTRL+O`, `Enter`, `CTRL+X`).
+
+Prüfe danach, dass die Datei wirklich existiert und Inhalt hat:
+
+```bash
+ls -l ~/linux-basics/dokumente/abschlussfragen.txt
+cat ~/linux-basics/dokumente/abschlussfragen.txt
+```
+
+Anforderungen:
+
+1. Jede Frage muss beantwortet sein.
+2. Mindestens ein Satz pro Antwort.
+3. Die Datei muss am vereinbarten Ort liegen.
+
+---
+
 # Erwartetes Endergebnis
 
 Am Ende sollte ungefähr diese Struktur vorhanden sein:
@@ -523,35 +588,6 @@ linux-basics/
     ├── prozesse.txt
     └── speicherplatz.txt
 ```
-
----
-
-# Abschlussfragen für die Besprechung
-
-1. Was ist ein Paketmanager und wozu braucht man ihn?
-2. Was bedeutet `sudo`?
-3. Was bedeuten die Rechte `r`, `w`, `x`?
-4. Welche Befehle hast du heute neu gelernt?
-5. Welche Aufgabe war am einfachsten?
-6. Welche Aufgabe war am schwierigsten?
-7. Wie bist du vorgegangen, als du einen Befehl nicht kanntest?
-8. Welche Fehlermeldung hast du erhalten und wie hast du sie behoben?
-9. Was hast du selbstständig herausgefunden?
-10. Was würdest du beim nächsten Mal anders machen?
-
----
-
-# Bewertung durch den Betreuer
-
-| Bereich | Beobachtung |
-|---|---|
-| Verständnis | Versteht die Person, wie Pakete, Benutzer und Prozesse zusammenhängen? |
-| Selbstständigkeit | Kann sie Befehle abtippen, prüfen und korrigieren? |
-| Genauigkeit | Werden Ordner und Dateien korrekt erstellt? |
-| Problemlösung | Wie geht sie mit Fehlermeldungen um? |
-| Recherche | Findet die Person selbstständig hilfreiche Informationen? |
-| Interesse | Stellt sie Fragen und probiert sie Dinge aus? |
-| Dokumentation | Sind Notizen, Lösungen und Abschlussbericht verständlich? |
 
 ---
 
