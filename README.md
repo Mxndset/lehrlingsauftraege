@@ -32,7 +32,7 @@ Wichtig ist nicht, dass du alles auswendig kannst. Probiere Befehle aus, lies Fe
 
 # Teil 1: Vorbereitung
 
-## Aufgabe 1: Arbeitsordner erstellen
+### Aufgabe 1: Arbeitsordner erstellen
 
 Erstelle in deinem Home-Verzeichnis einen Arbeitsordner für diesen Auftrag.
 
@@ -60,7 +60,7 @@ ls
 
 # Teil 2: Paketverwaltung kennenlernen
 
-## Aufgabe 2: Pakete suchen und installieren
+### Aufgabe 2: Pakete suchen und installieren
 
 Unter Ubuntu werden Programme mit dem Paketmanager `apt` verwaltet.
 
@@ -69,8 +69,8 @@ Führe folgende Befehle aus:
 ```bash
 sudo apt update
 apt list --installed | head
-apt search htop
-sudo apt install -y htop
+apt search btop
+sudo apt install -y btop
 ```
 
 Beantworte kurz schriftlich:
@@ -89,26 +89,26 @@ Speichere deine Antworten in:
 
 ---
 
-## Aufgabe 3: Programm ausprobieren
+### Aufgabe 3: Programm ausprobieren
 
 Starte das eben installierte Programm:
 
 ```bash
-htop
+btop
 ```
 
 Beobachte kurz, was angezeigt wird. Beende das Programm danach mit `q`.
 
 Schreibe in `paketverwaltung.txt`:
 
-1. Was zeigt `htop` an?
+1. Was zeigt `btop` an?
 2. Welcher Unterschied fällt dir zu `top` auf?
 
 ---
 
 # Teil 3: Benutzer und Rechte
 
-## Aufgabe 4: Benutzerinformationen anzeigen
+### Aufgabe 4: Benutzerinformationen anzeigen
 
 Führe folgende Befehle aus:
 
@@ -135,7 +135,7 @@ Speichere die Tabelle in:
 
 ---
 
-## Aufgabe 5: Mit Dateirechten arbeiten
+### Aufgabe 5: Mit Dateirechten arbeiten
 
 Erstelle eine Testdatei und schaue dir die Rechte an:
 
@@ -165,7 +165,7 @@ Beantworte schriftlich in `benutzer.txt`:
 
 # Teil 4: Prozesse und System
 
-## Aufgabe 6: Prozesse anschauen
+### Aufgabe 6: Prozesse anschauen
 
 Führe folgende Befehle aus und speichere die Ausgabe in Dateien:
 
@@ -194,7 +194,7 @@ Beantworte schriftlich in `~/linux-basics/dokumente/system.txt`:
 
 # Teil 5: Mit Textdateien arbeiten
 
-## Aufgabe 7: Logdatei vorbereiten
+### Aufgabe 7: Logdatei vorbereiten
 
 Erstelle eine Beispiel-Logdatei mit folgendem Inhalt:
 
@@ -221,7 +221,7 @@ Speichere und schliesse die Datei (`CTRL+O`, `Enter`, `CTRL+X`).
 
 ---
 
-## Aufgabe 8: Logdatei analysieren
+### Aufgabe 8: Logdatei analysieren
 
 Probiere folgende Befehle aus:
 
@@ -245,7 +245,7 @@ Beantworte schriftlich in `~/linux-basics/dokumente/loganalyse.txt`:
 
 # Teil 6: Erstes Wartungs-Skript
 
-## Aufgabe 9: Skript erstellen
+### Aufgabe 9: Skript erstellen
 
 Wechsle in den Ordner `scripts`:
 
@@ -289,7 +289,7 @@ chmod +x wartung.sh
 
 ---
 
-## Aufgabe 9.1: Defektes Skript reparieren
+### Aufgabe 9.1: Defektes Skript reparieren
 
 Du bekommst hier ein zweites Skript. Es sieht auf den ersten Blick richtig aus, aber **es funktioniert so nicht**. Es enthält mehrere Fehler. Deine Aufgabe ist es, diese Fehler zu finden und zu beheben.
 
@@ -366,7 +366,7 @@ Skript-Reparatur
 
 # Teil 7: Abschlussbericht
 
-## Aufgabe 10: Bericht schreiben
+### Aufgabe 10: Bericht schreiben
 
 Erstelle die Datei:
 
@@ -399,7 +399,7 @@ Wichtig ist nicht nur das Resultat, sondern auch dass du erklären kannst, **wie
 
 ---
 
-## Aufgabe 11.1: Hilfe im Terminal
+### Aufgabe 11.1: Hilfe im Terminal
 
 Finde selbstständig heraus, wie man unter Linux zu einem Befehl die Hilfe anzeigt.
 
@@ -422,7 +422,7 @@ Hilfe im Terminal
 
 ---
 
-## Aufgabe 11.2: Fehler im Log zählen
+### Aufgabe 11.2: Fehler im Log zählen
 
 Du hast die Logdatei `server.log`. Finde selbstständig heraus, wie man die Anzahl bestimmter Einträge zählt.
 
@@ -452,7 +452,7 @@ Log-Statistik
 
 ---
 
-## Aufgabe 11.3: Befehle kombinieren mit Pipe
+### Aufgabe 11.3: Befehle kombinieren mit Pipe
 
 In der IT verkettet man oft mehrere Befehle. Finde selbstständig heraus, wie das mit dem Pipe-Zeichen `|` funktioniert.
 
@@ -476,7 +476,7 @@ Befehle kombinieren
 
 ---
 
-## Aufgabe 11.4: Eigenen Benutzer untersuchen
+### Aufgabe 11.4: Eigenen Benutzer untersuchen
 
 Finde selbstständig heraus:
 
@@ -498,7 +498,7 @@ Benutzer-Recherche
 
 ---
 
-## Aufgabe 11.5: Fehler analysieren
+### Aufgabe 11.5: Fehler analysieren
 
 Führe absichtlich einen falschen Befehl aus, zum Beispiel:
 
@@ -529,7 +529,7 @@ Fehleranalyse
 
 ---
 
-## Aufgabe 11.6: Wartungs-Skript erweitern
+### Aufgabe 11.6: Wartungs-Skript erweitern
 
 Erweitere dein Skript `wartung.sh` selbstständig um mindestens **zwei zusätzliche Informationen**.
 
@@ -571,7 +571,7 @@ Skript-Erweiterung
 
 # Teil 9: Abschlussfragen schriftlich beantworten
 
-## Aufgabe 12: Antworten in einer Datei speichern
+### Aufgabe 12: Antworten in einer Datei speichern
 
 In dieser Aufgabe gibt es **keine vorgegebenen Befehle**. Du sollst selbst herausfinden, wie du die Datei erstellst, bearbeitest, speicherst und prüfst. Alles, was du dafür brauchst, hast du in den vorherigen Aufgaben bereits verwendet.
 
