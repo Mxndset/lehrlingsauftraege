@@ -289,6 +289,81 @@ chmod +x wartung.sh
 
 ---
 
+## Aufgabe 9.1: Defektes Skript reparieren
+
+Du bekommst hier ein zweites Skript. Es sieht auf den ersten Blick richtig aus, aber **es funktioniert so nicht**. Es enthält mehrere Fehler. Deine Aufgabe ist es, diese Fehler zu finden und zu beheben.
+
+Erstelle die Datei `check-defekt.sh` im Ordner `scripts`:
+
+```bash
+cd ~/linux-basics/scripts
+nano check-defekt.sh
+```
+
+Übernimm den folgenden Inhalt **genau so** in die Datei (inklusive der Fehler):
+
+```bash
+#!/bin/bash
+
+echo "System-Check (defekt)"
+echo "---------------------"
+echo "Benutzer: $(whoam)"
+echo "Datum: (date)"
+echo "Computer: $hostname"
+echo ""
+echo "Speicherplatz:"
+df -H /
+echo ""
+echo "Logdatei-Inhalt:"
+cat ~/linux-basics/logs/serverr.log
+```
+
+Speichere die Datei und mache sie ausführbar:
+
+```bash
+chmod +x check-defekt.sh
+```
+
+Starte das Skript:
+
+```bash
+./check-defekt.sh
+```
+
+**Anforderungen:**
+
+1. Lies die Fehlermeldungen genau durch.
+2. Finde **alle** Fehler im Skript. Es sind insgesamt **fünf** Fehler vorhanden.
+3. Korrigiere jeden Fehler einzeln und starte das Skript danach erneut.
+4. Das Skript muss am Schluss **ohne Fehlermeldung** laufen und alle Informationen korrekt anzeigen.
+
+**Tipp:** Korrigiere nur einen Fehler nach dem anderen und führe das Skript nach jeder Korrektur erneut aus. So siehst du genau, welche Fehlermeldung zu welchem Fehler gehört.
+
+Dokumentiere deine Lösung in:
+
+```text
+~/linux-basics/dokumente/skript-reparatur.txt
+```
+
+Die Dokumentation soll enthalten:
+
+```text
+Skript-Reparatur
+
+1. Welche Fehlermeldungen hat das Skript zuerst angezeigt?
+2. Welche fünf Fehler waren im Skript?
+   - Fehler 1:
+   - Fehler 2:
+   - Fehler 3:
+   - Fehler 4:
+   - Fehler 5:
+3. Wie habe ich jeden Fehler korrigiert?
+4. Wie bin ich vorgegangen, um die Fehler zu finden?
+5. Welche Quelle oder Hilfe habe ich verwendet?
+```
+
+---
+
 # Teil 7: Abschlussbericht
 
 ## Aufgabe 10: Bericht schreiben
@@ -498,13 +573,12 @@ Skript-Erweiterung
 
 ## Aufgabe 12: Antworten in einer Datei speichern
 
-Die Abschlussfragen sollen nicht nur mündlich besprochen, sondern auch schriftlich festgehalten werden.
+In dieser Aufgabe gibt es **keine vorgegebenen Befehle**. Du sollst selbst herausfinden, wie du die Datei erstellst, bearbeitest, speicherst und prüfst. Alles, was du dafür brauchst, hast du in den vorherigen Aufgaben bereits verwendet.
 
-Erstelle die Datei:
+**Vorgaben:**
 
-```bash
-nano ~/linux-basics/dokumente/abschlussfragen.txt
-```
+- Dateiname: `abschlussfragen.txt`
+- Speicherort: `~/linux-basics/dokumente/abschlussfragen.txt`
 
 Übernimm die folgenden Fragen in die Datei und beantworte jede Frage in eigenen Worten. Schreibe ganze Sätze und nicht nur Stichworte.
 
@@ -542,20 +616,14 @@ Abschlussfragen Linux Basics
     Antwort:
 ```
 
-Speichere und schliesse die Datei (`CTRL+O`, `Enter`, `CTRL+X`).
+**Anforderungen:**
 
-Prüfe danach, dass die Datei wirklich existiert und Inhalt hat:
+1. Die Datei liegt genau am angegebenen Pfad und hat genau den angegebenen Namen.
+2. Alle zehn Fragen sind in der Datei enthalten.
+3. Jede Frage ist mit mindestens einem ganzen Satz beantwortet.
+4. Du kannst zeigen, dass die Datei wirklich existiert und den richtigen Inhalt hat.
 
-```bash
-ls -l ~/linux-basics/dokumente/abschlussfragen.txt
-cat ~/linux-basics/dokumente/abschlussfragen.txt
-```
-
-Anforderungen:
-
-1. Jede Frage muss beantwortet sein.
-2. Mindestens ein Satz pro Antwort.
-3. Die Datei muss am vereinbarten Ort liegen.
+**Tipp:** Schau dir an, wie du in den vorherigen Aufgaben Dateien erstellt, bearbeitet, gespeichert und ihren Inhalt geprüft hast. Genau dieselben Werkzeuge brauchst du hier wieder.
 
 ---
 
@@ -567,6 +635,7 @@ Am Ende sollte ungefähr diese Struktur vorhanden sein:
 linux-basics/
 ├── dokumente/
 │   ├── abschlussbericht.txt
+│   ├── abschlussfragen.txt
 │   ├── benutzer.txt
 │   ├── benutzer-recherche.txt
 │   ├── fehleranalyse.txt
@@ -576,10 +645,12 @@ linux-basics/
 │   ├── paketverwaltung.txt
 │   ├── pipe-loesung.txt
 │   ├── skript-erweiterung.txt
+│   ├── skript-reparatur.txt
 │   └── system.txt
 ├── logs/
 │   └── server.log
 ├── scripts/
+│   ├── check-defekt.sh
 │   └── wartung.sh
 └── systeminfos/
     ├── arbeitsspeicher.txt
